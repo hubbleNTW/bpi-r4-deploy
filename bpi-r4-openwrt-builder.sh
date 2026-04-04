@@ -16,8 +16,6 @@ cd mtk-openwrt-feeds; git checkout c55064d7aa0125264b8e42e1bdb045f8da96f29e; cd 
 
 \cp -r my_files/999-sfp-10-additional-quirks.patch mtk-openwrt-feeds/25.12/files/target/linux/mediatek/patches-6.12
 
-#\cp -r my_files/9999-image-bpi-r4-sdcard.patch mtk-openwrt-feeds/25.12/patches-base
-
 ### tx_power check Ivan Mironov's patch - for defective BE14 boards with defective eeprom flash
 \cp -r my_files/100-wifi-mt76-mt7996-Use-tx_power-from-default-fw-if-EEP.patch mtk-openwrt-feeds/autobuild/unified/filogic/mac80211/25.12/files/package/kernel/mt76/patches
 
