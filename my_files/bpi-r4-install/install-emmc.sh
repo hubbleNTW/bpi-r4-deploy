@@ -1,5 +1,5 @@
 #!/bin/sh
-# install-emmc.sh — Install OpenWrt to eMMC
+# install-emmc.sh Ã³ Install OpenWrt to eMMC
 # Must be run from NAND rescue system only!
 
 EMMC_IMG="/tmp/emmc-img.bin"

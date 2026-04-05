@@ -1,5 +1,5 @@
 #!/bin/sh
-# install-nvme.sh — BPI-R4 NVMe install script
+# install-nvme.sh Ã³ BPI-R4 NVMe install script
 # Run from NAND rescue system
 
 NVME_DEV="/dev/nvme0n1"
