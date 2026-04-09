@@ -39,7 +39,7 @@ jobs:
             echo "RELEASE_TAG=release-nvme" >> $GITHUB_ENV
             echo "RELEASE_NAME=BPI-R4 NVMe build (latest)" >> $GITHUB_ENV
           else
-            echo "BUILDER=./bpi-r4-openwrt-builder-sdcard.sh" >> $GITHUB_ENV
+            echo "BUILDER=./bpi-r4-openwrt-builder-sd-emmc.sh" >> $GITHUB_ENV
             echo "RELEASE_TAG=release-sdcard" >> $GITHUB_ENV
             echo "RELEASE_NAME=BPI-R4 SD/eMMC build (latest)" >> $GITHUB_ENV
           fi
