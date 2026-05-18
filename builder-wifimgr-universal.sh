@@ -4,7 +4,8 @@ set -euo pipefail
 # Validated source commits (v1.1.1, 2026-05-14):
 #   OpenWrt:  99211b26fb3b9ed71d065a1fa35ce54a0d883944  (openwrt-25.12)
 #   MTK SDK:  dbf10418baf257033cf4c590f098db1022496dc6  (tarball in repo-cache/mtk-openwrt-feeds.tar.gz)
-OPENWRT_COMMIT=${OPENWRT_COMMIT:-99211b26fb3b9ed71d065a1fa35ce54a0d883944}
+OPENWRT_COMMIT=${OPENWRT_COMMIT:-ba915c2ee711d047d5be8575c1e98699119429ab}
+# OPENWRT_COMMIT=${OPENWRT_COMMIT:-99211b26fb3b9ed71d065a1fa35ce54a0d883944}
 
 rm -rf openwrt
 rm -rf mtk-openwrt-feeds
@@ -39,11 +40,11 @@ echo "CONFIG_BLK_DEV_NVME=y" >> target/linux/mediatek/filogic/config-6.12
 
 \cp -r ../my_files/999-fitblk-02-w-add-bpi-r4-nvme-fitblk.patch target/linux/mediatek/patches-6.12
 
-\cp -r ../my_files/sms-tool/ feeds/packages/utils/sms-tool
-\cp -r ../my_files/modemdata-main/ feeds/packages/utils/modemdata 
-\cp -r ../my_files/luci-app-modemdata-main/luci-app-modemdata/ feeds/luci/applications
+# \cp -r ../my_files/sms-tool/ feeds/packages/utils/sms-tool
+# \cp -r ../my_files/modemdata-main/ feeds/packages/utils/modemdata 
+# \cp -r ../my_files/luci-app-modemdata-main/luci-app-modemdata/ feeds/luci/applications
 \cp -r ../my_files/luci-app-lite-watchdog/ feeds/luci/applications
-\cp -r ../my_files/luci-app-sms-tool-js-main/luci-app-sms-tool-js/ feeds/luci/applications
+# \cp -r ../my_files/luci-app-sms-tool-js-main/luci-app-sms-tool-js/ feeds/luci/applications
 
 \cp -r ../my_files/luci-app-wifimgr feeds/luci/applications/luci-app-wifimgr
 
@@ -56,11 +57,11 @@ chmod +x files/etc/uci-defaults/99-set-hostname
 
 \cp ../my_files/fit.sh package/utils/fitblk/files/fit.sh
 
-\cp -r ../my_files/qmi.sh package/network/utils/uqmi/files/lib/netifd/proto/
-chmod -R 755 package/network/utils/uqmi/files/lib/netifd/proto
-chmod -R 755 feeds/luci/applications/luci-app-modemdata/root
-chmod -R 755 feeds/luci/applications/luci-app-sms-tool-js/root
-chmod -R 755 feeds/packages/utils/modemdata/files/usr/share
+# \cp -r ../my_files/qmi.sh package/network/utils/uqmi/files/lib/netifd/proto/
+# chmod -R 755 package/network/utils/uqmi/files/lib/netifd/proto
+# chmod -R 755 feeds/luci/applications/luci-app-modemdata/root
+# chmod -R 755 feeds/luci/applications/luci-app-sms-tool-js/root
+# chmod -R 755 feeds/packages/utils/modemdata/files/usr/share
 
 \cp -r ../configs/my_defconfig-wifimgr-universal .config
 make defconfig
