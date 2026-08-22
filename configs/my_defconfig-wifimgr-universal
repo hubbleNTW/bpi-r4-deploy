@@ -425,7 +425,7 @@ CONFIG_PACKAGE_sgdisk=y
 # CONFIG_PACKAGE_sms-tool is not set
 # CONFIG_PACKAGE_spidev-test is not set
 CONFIG_PACKAGE_sqm-scripts=y
-C# CONFIG_PACKAGE_strongswan is not set
+# CONFIG_PACKAGE_strongswan is not set
 # CONFIG_PACKAGE_strongswan-charon is not set
 # CONFIG_PACKAGE_strongswan-default is not set
 # CONFIG_PACKAGE_strongswan-mod-aes is not set
