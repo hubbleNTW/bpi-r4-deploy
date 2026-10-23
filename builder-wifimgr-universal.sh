@@ -6,9 +6,7 @@ set -euo pipefail
 # OpenWrt 6dead286 / MTK 822c2f06):
 #   OpenWrt:  4d0fec5a4845ba166203a782d08217b3f1cf2af9  (openwrt-25.12)
 #   MTK SDK:  3a4e2a2511af93cea1ca43205a02362423882b7c  (main)
-# OPENWRT_COMMIT=${OPENWRT_COMMIT:-9facdff6fb001b7a4e8cea395b89278fd49ca92f}
-OPENWRT_COMMIT=${OPENWRT_COMMIT:-9a161faa40ec1a130a07da13e34e3d3a7f966a2c}
-
+OPENWRT_COMMIT=${OPENWRT_COMMIT:-9facdff6fb001b7a4e8cea395b89278fd49ca92f}
 rm -rf openwrt
 rm -rf mtk-openwrt-feeds
 
