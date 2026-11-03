@@ -56,11 +56,11 @@ add_common_tree_patches() {
 }
 
 add_packages() {
-	\cp -r "$REPO/common/packages/sms-tool/" feeds/packages/utils/sms-tool
-	\cp -r "$REPO/common/packages/modemdata-main/" feeds/packages/utils/modemdata
-	\cp -r "$REPO/common/packages/luci-app-modemdata-main/luci-app-modemdata/" feeds/luci/applications
+#	\cp -r "$REPO/common/packages/sms-tool/" feeds/packages/utils/sms-tool
+#	\cp -r "$REPO/common/packages/modemdata-main/" feeds/packages/utils/modemdata
+#	\cp -r "$REPO/common/packages/luci-app-modemdata-main/luci-app-modemdata/" feeds/luci/applications
 	\cp -r "$REPO/common/packages/luci-app-lite-watchdog/" feeds/luci/applications
-	\cp -r "$REPO/common/packages/luci-app-sms-tool-js-main/luci-app-sms-tool-js/" feeds/luci/applications
+#	\cp -r "$REPO/common/packages/luci-app-sms-tool-js-main/luci-app-sms-tool-js/" feeds/luci/applications
 }
 
 # Files baked into the image: common/files, then the board's files on top.
@@ -73,11 +73,11 @@ add_files() {
 add_after_feeds() {
 	\cp "$REPO/boards/$BOARD/fit.sh" package/utils/fitblk/files/fit.sh
 
-	\cp -r "$REPO/common/qmi.sh" package/network/utils/uqmi/files/lib/netifd/proto/
-	chmod -R 755 package/network/utils/uqmi/files/lib/netifd/proto
-	chmod -R 755 feeds/luci/applications/luci-app-modemdata/root
-	chmod -R 755 feeds/luci/applications/luci-app-sms-tool-js/root
-	chmod -R 755 feeds/packages/utils/modemdata/files/usr/share
+#	\cp -r "$REPO/common/qmi.sh" package/network/utils/uqmi/files/lib/netifd/proto/
+#	chmod -R 755 package/network/utils/uqmi/files/lib/netifd/proto
+#	chmod -R 755 feeds/luci/applications/luci-app-modemdata/root
+#	chmod -R 755 feeds/luci/applications/luci-app-sms-tool-js/root
+#	chmod -R 755 feeds/packages/utils/modemdata/files/usr/share
 }
 
 add_config() {
